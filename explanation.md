@@ -2,8 +2,8 @@
 <h3>Overview</h3>
 <p>Encapsulation allows an object to separate its interface from its implementation. The data and the implementation code for the object are hidden behind its interface.</p>
 <p>Encapsulation hides internal implementation details from users.</p>
-<br><br><br><h3>Example:</h3>
-<br><br><br><p>A Customer may issue a check and now know how it is processed. <br>The internal processing is hidden from the customer. Similary, the <br>inessential attributes of a class are hidden from users by using encapsulation. The <br>hidden attributes of a class are called protected attributes.</p>
+<h3><em>Example:</em></h3>
+<p><em>A Customer may issue a check and now know how it is processed. <br>The internal processing is hidden from the customer. Similary, the <br>inessential attributes of a class are hidden from users by using encapsulation. The <br>hidden attributes of a class are called protected attributes.</em></p>
 
 
 

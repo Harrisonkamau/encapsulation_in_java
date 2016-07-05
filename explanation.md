@@ -1,9 +1,51 @@
 <h1>Encapsulation in Object Oriented Programming</h1>
 <h3>Overview</h3>
-<p>Encapsulation allows an object to separate its interface from its implementation. The data and the implementation code for the object are hidden behind its interface.</p>
-<p>Encapsulation hides internal implementation details from users.</p>
-<h3><em>Example:</em></h3>
-<p><em>A Customer may issue a check and now know how it is processed. <br>The internal processing is hidden from the customer. Similary, the <br>inessential attributes of a class are hidden from users by using encapsulation. The <br>hidden attributes of a class are called protected attributes.</em></p>
+<p>The whole idea behind encapsulation is to hide the implementation details from users. If a data member is private it means it can only be accessed within the same class. No outside class can access private data member (variable) of other class. However if we setup public getter and setter methods to update (for e.g. <strong>void setSerialNumber(int serialNumber))</strong>and read (for e.g.  <strong>int getSerialNumber())</strong> the private data fields then the outside class can access those private data fields via public methods. This way data can only be accessed by public methods thus making the private fields and their implementation hidden for outside classes. That’s why encapsulation is known as <strong>data hiding</strong>. Lets see an example to understand this concept better.</p>
+~~~Java
+public class EmployeeRegister{
+    private int serialNumber;
+    private String empName;
+    private int empAge;
+
+    //Getter and Setter methods
+    public int getEmpSerialNumber(){
+        return serialNumber;
+    }
+
+    public String getEmpName(){
+        return empName;
+    }
+
+    public int getEmpAge(){
+        return empAge;
+    }
+
+    public void setEmpAge(int newValue){
+        empAge = newValue;
+    }
+
+    public void setEmpName(String newValue){
+        empName = newValue;
+    }
+
+    public void setEmpSerialNumber(int newValue){
+        serialNumber = newValue;
+    }
+}
+public class EncapsTest{
+    public static void main(String args[]){
+         EmployeeRegister obj = new EmployeeRegister();
+         obj.setEmpName("Mario");
+         obj.setEmpAge(32);
+         obj.setEmpSerialNumber(112233);
+         System.out.println("Employee Name: " + obj.getEmpName());
+         System.out.println("Employee SSN: " + obj.getEmpSerialNumber());
+         System.out.println("Employee Age: " + obj.getEmpAge());
+    }
+}
+~~~
+
+
 
 
 

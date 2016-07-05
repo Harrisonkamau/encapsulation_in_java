@@ -35,16 +35,22 @@ public class EmployeeRegister{
 public class EncapsTest{
     public static void main(String args[]){
          EmployeeRegister obj = new EmployeeRegister();
-         obj.setEmpName("Mario");
+         obj.setEmpName("Harry");
          obj.setEmpAge(32);
          obj.setEmpSerialNumber(112233);
          System.out.println("Employee Name: " + obj.getEmpName());
-         System.out.println("Employee SSN: " + obj.getEmpSerialNumber());
+         System.out.println("Employee Serial Number: " + obj.getEmpSerialNumber());
          System.out.println("Employee Age: " + obj.getEmpAge());
     }
 }
 ~~~
 
+<h2><strong>Output:</strong></h2>
+~~~Java
+Employee Name: Harry
+Employee Serial Number: 112233
+Employee Age: 32
+~~~
 
 
 

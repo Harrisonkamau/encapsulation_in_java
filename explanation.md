@@ -52,6 +52,8 @@ Employee Serial Number: 112233
 Employee Age: 32
 ~~~
 
+<p>In above example all the three data members (or data fields) are private which cannot be accessed directly. These fields can be accessed via public methods only. Fields empName, serialNumber and empAge are made hidden data fields using encapsulation technique of OOPs.</p>
+
 
 
 
